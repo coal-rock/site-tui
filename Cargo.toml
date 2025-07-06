@@ -1,0 +1,7 @@
+[package]
+name = "site-tui"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+iocraft = { version = "0.7" }
