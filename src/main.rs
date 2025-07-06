@@ -4,7 +4,6 @@ mod colors;
 mod components;
 mod pages;
 mod state;
-mod termimad_colors;
 
 use colors::*;
 use pages::{Blog, BlogPost, BlogPostContent, Home};
