@@ -20,8 +20,12 @@ pub fn BlogPost(mut hooks: Hooks, props: &BlogPostProps) -> impl Into<AnyElement
         move |event| match event {
             TerminalEvent::Key(KeyEvent { code, kind, .. }) if kind != KeyEventKind::Release => {
                 match code {
-                    KeyCode::Up => scroll_offset.set((scroll_offset.get() - 1).max(0)),
-                    KeyCode::Down => scroll_offset.set(scroll_offset.get() + 1),
+                    KeyCode::Up | KeyCode::Char('k') => {
+                        scroll_offset.set((scroll_offset.get() - 1).max(0))
+                    }
+                    KeyCode::Down | KeyCode::Char('j') => {
+                        scroll_offset.set(scroll_offset.get() + 1)
+                    }
                     _ => {}
                 }
             }
