@@ -1,0 +1,4055 @@
+warning: unused import: `CardProps`
+ --> src/components/mod.rs:2:22
+  |
+2 | pub use card::{Card, CardProps};
+  |                      ^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `Color::*`
+ --> src/pages/blog_post.rs:3:48
+  |
+3 | use termimad::crossterm::style::{Attribute::*, Color::*};
+  |                                                ^^^^^^^^
+
+warning: unused variable: `hooks`
+  --> src/pages/blog_post.rs:17:21
+   |
+17 | pub fn BlogPost(mut hooks: Hooks, props: &BlogPostProps) -> impl Into<AnyElement<'static>> {
+   |                     ^^^^^ help: if this is intentional, prefix it with an underscore: `_hooks`
+   |
+   = note: `#[warn(unused_variables)]` on by default
+
+warning: unused variable: `c`
+  --> src/pages/blog_post.rs:84:94
+   |
+84 | ...                   n.compounds.into_iter().enumerate().map(|(i, c)| {
+   |                                                                    ^ help: if this is intentional, prefix it with an underscore: `_c`
+
+warning: variable does not need to be mutable
+  --> src/pages/blog_post.rs:17:17
+   |
+17 | pub fn BlogPost(mut hooks: Hooks, props: &BlogPostProps) -> impl Into<AnyElement<'static>> {
+   |                 ----^^^^^
+   |                 |
+   |                 help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` on by default
+
+warning: constant `COLOR_RED` is never used
+ --> src/colors.rs:8:11
+  |
+8 | pub const COLOR_RED: Color = Color::Rgb {
+  |           ^^^^^^^^^
+  |
+  = note: `#[warn(dead_code)]` on by default
+
+warning: constant `COLOR_BLUE` is never used
+  --> src/colors.rs:23:11
+   |
+23 | pub const COLOR_BLUE: Color = Color::Rgb {
+   |           ^^^^^^^^^^
+
+warning: constant `COLOR_PURPLE` is never used
+  --> src/colors.rs:28:11
+   |
+28 | pub const COLOR_PURPLE: Color = Color::Rgb {
+   |           ^^^^^^^^^^^^
+
+warning: constant `COLOR_AQUA` is never used
+  --> src/colors.rs:33:11
+   |
+33 | pub const COLOR_AQUA: Color = Color::Rgb {
+   |           ^^^^^^^^^^
+
+warning: constant `COLOR_GRAY_LIGHT` is never used
+  --> src/colors.rs:44:11
+   |
+44 | pub const COLOR_GRAY_LIGHT: Color = Color::Rgb {
+   |           ^^^^^^^^^^^^^^^^
+
+warning: constant `COLOR_GREEN_LIGHT` is never used
+  --> src/colors.rs:54:11
+   |
+54 | pub const COLOR_GREEN_LIGHT: Color = Color::Rgb {
+   |           ^^^^^^^^^^^^^^^^^
+
+warning: constant `COLOR_YELLOW_LIGHT` is never used
+  --> src/colors.rs:59:11
+   |
+59 | pub const COLOR_YELLOW_LIGHT: Color = Color::Rgb {
+   |           ^^^^^^^^^^^^^^^^^^
+
+warning: constant `COLOR_BLUE_LIGHT` is never used
+  --> src/colors.rs:64:11
+   |
+64 | pub const COLOR_BLUE_LIGHT: Color = Color::Rgb {
+   |           ^^^^^^^^^^^^^^^^
+
+warning: constant `COLOR_PURPLE_LIGHT` is never used
+  --> src/colors.rs:69:11
+   |
+69 | pub const COLOR_PURPLE_LIGHT: Color = Color::Rgb {
+   |           ^^^^^^^^^^^^^^^^^^
+
+warning: constant `COLOR_AQUA_LIGHT` is never used
+  --> src/colors.rs:74:11
+   |
+74 | pub const COLOR_AQUA_LIGHT: Color = Color::Rgb {
+   |           ^^^^^^^^^^^^^^^^
+
+warning: constant `COLOR_BG0_H` is never used
+  --> src/colors.rs:85:11
+   |
+85 | pub const COLOR_BG0_H: Color = Color::Rgb {
+   |           ^^^^^^^^^^^
+
+warning: constant `COLOR_BG0` is never used
+  --> src/colors.rs:90:11
+   |
+90 | pub const COLOR_BG0: Color = Color::Rgb {
+   |           ^^^^^^^^^
+
+warning: constant `COLOR_BG1` is never used
+  --> src/colors.rs:95:11
+   |
+95 | pub const COLOR_BG1: Color = Color::Rgb {
+   |           ^^^^^^^^^
+
+warning: constant `COLOR_BG2` is never used
+   --> src/colors.rs:100:11
+    |
+100 | pub const COLOR_BG2: Color = Color::Rgb {
+    |           ^^^^^^^^^
+
+warning: constant `COLOR_BG3` is never used
+   --> src/colors.rs:105:11
+    |
+105 | pub const COLOR_BG3: Color = Color::Rgb {
+    |           ^^^^^^^^^
+
+warning: constant `COLOR_BG4` is never used
+   --> src/colors.rs:110:11
+    |
+110 | pub const COLOR_BG4: Color = Color::Rgb {
+    |           ^^^^^^^^^
+
+warning: constant `COLOR_GRAY_DARK` is never used
+   --> src/colors.rs:115:11
+    |
+115 | pub const COLOR_GRAY_DARK: Color = Color::Rgb {
+    |           ^^^^^^^^^^^^^^^
+
+warning: constant `COLOR_BG0_S` is never used
+   --> src/colors.rs:126:11
+    |
+126 | pub const COLOR_BG0_S: Color = Color::Rgb {
+    |           ^^^^^^^^^^^
+
+warning: constant `COLOR_FG2` is never used
+   --> src/colors.rs:141:11
+    |
+141 | pub const COLOR_FG2: Color = Color::Rgb {
+    |           ^^^^^^^^^
+
+warning: constant `COLOR_FG1` is never used
+   --> src/colors.rs:146:11
+    |
+146 | pub const COLOR_FG1: Color = Color::Rgb {
+    |           ^^^^^^^^^
+
+warning: constant `COLOR_ORANGE_LIGHT` is never used
+   --> src/colors.rs:156:11
+    |
+156 | pub const COLOR_ORANGE_LIGHT: Color = Color::Rgb {
+    |           ^^^^^^^^^^^^^^^^^^
+
+warning: constant `COLOR_RED` is never used
+ --> src/termimad_colors.rs:8:11
+  |
+8 | pub const COLOR_RED: Color = Color::Rgb {
+  |           ^^^^^^^^^
+
+warning: constant `COLOR_GREEN` is never used
+  --> src/termimad_colors.rs:13:11
+   |
+13 | pub const COLOR_GREEN: Color = Color::Rgb {
+   |           ^^^^^^^^^^^
+
+warning: constant `COLOR_YELLOW` is never used
+  --> src/termimad_colors.rs:18:11
+   |
+18 | pub const COLOR_YELLOW: Color = Color::Rgb {
+   |           ^^^^^^^^^^^^
+
+warning: constant `COLOR_BLUE` is never used
+  --> src/termimad_colors.rs:23:11
+   |
+23 | pub const COLOR_BLUE: Color = Color::Rgb {
+   |           ^^^^^^^^^^
+
+warning: constant `COLOR_PURPLE` is never used
+  --> src/termimad_colors.rs:28:11
+   |
+28 | pub const COLOR_PURPLE: Color = Color::Rgb {
+   |           ^^^^^^^^^^^^
+
+warning: constant `COLOR_AQUA` is never used
+  --> src/termimad_colors.rs:33:11
+   |
+33 | pub const COLOR_AQUA: Color = Color::Rgb {
+   |           ^^^^^^^^^^
+
+warning: constant `COLOR_GRAY` is never used
+  --> src/termimad_colors.rs:38:11
+   |
+38 | pub const COLOR_GRAY: Color = Color::Rgb {
+   |           ^^^^^^^^^^
+
+warning: constant `COLOR_GRAY_LIGHT` is never used
+  --> src/termimad_colors.rs:44:11
+   |
+44 | pub const COLOR_GRAY_LIGHT: Color = Color::Rgb {
+   |           ^^^^^^^^^^^^^^^^
+
+warning: constant `COLOR_RED_LIGHT` is never used
+  --> src/termimad_colors.rs:49:11
+   |
+49 | pub const COLOR_RED_LIGHT: Color = Color::Rgb {
+   |           ^^^^^^^^^^^^^^^
+
+warning: constant `COLOR_GREEN_LIGHT` is never used
+  --> src/termimad_colors.rs:54:11
+   |
+54 | pub const COLOR_GREEN_LIGHT: Color = Color::Rgb {
+   |           ^^^^^^^^^^^^^^^^^
+
+warning: constant `COLOR_YELLOW_LIGHT` is never used
+  --> src/termimad_colors.rs:59:11
+   |
+59 | pub const COLOR_YELLOW_LIGHT: Color = Color::Rgb {
+   |           ^^^^^^^^^^^^^^^^^^
+
+warning: constant `COLOR_BLUE_LIGHT` is never used
+  --> src/termimad_colors.rs:64:11
+   |
+64 | pub const COLOR_BLUE_LIGHT: Color = Color::Rgb {
+   |           ^^^^^^^^^^^^^^^^
+
+warning: constant `COLOR_PURPLE_LIGHT` is never used
+  --> src/termimad_colors.rs:69:11
+   |
+69 | pub const COLOR_PURPLE_LIGHT: Color = Color::Rgb {
+   |           ^^^^^^^^^^^^^^^^^^
+
+warning: constant `COLOR_AQUA_LIGHT` is never used
+  --> src/termimad_colors.rs:74:11
+   |
+74 | pub const COLOR_AQUA_LIGHT: Color = Color::Rgb {
+   |           ^^^^^^^^^^^^^^^^
+
+warning: constant `COLOR_BG0_H` is never used
+  --> src/termimad_colors.rs:85:11
+   |
+85 | pub const COLOR_BG0_H: Color = Color::Rgb {
+   |           ^^^^^^^^^^^
+
+warning: constant `COLOR_BG0` is never used
+  --> src/termimad_colors.rs:90:11
+   |
+90 | pub const COLOR_BG0: Color = Color::Rgb {
+   |           ^^^^^^^^^
+
+warning: constant `COLOR_BG1` is never used
+  --> src/termimad_colors.rs:95:11
+   |
+95 | pub const COLOR_BG1: Color = Color::Rgb {
+   |           ^^^^^^^^^
+
+warning: constant `COLOR_BG2` is never used
+   --> src/termimad_colors.rs:100:11
+    |
+100 | pub const COLOR_BG2: Color = Color::Rgb {
+    |           ^^^^^^^^^
+
+warning: constant `COLOR_BG3` is never used
+   --> src/termimad_colors.rs:105:11
+    |
+105 | pub const COLOR_BG3: Color = Color::Rgb {
+    |           ^^^^^^^^^
+
+warning: constant `COLOR_BG4` is never used
+   --> src/termimad_colors.rs:110:11
+    |
+110 | pub const COLOR_BG4: Color = Color::Rgb {
+    |           ^^^^^^^^^
+
+warning: constant `COLOR_GRAY_DARK` is never used
+   --> src/termimad_colors.rs:115:11
+    |
+115 | pub const COLOR_GRAY_DARK: Color = Color::Rgb {
+    |           ^^^^^^^^^^^^^^^
+
+warning: constant `COLOR_ORANGE` is never used
+   --> src/termimad_colors.rs:120:11
+    |
+120 | pub const COLOR_ORANGE: Color = Color::Rgb {
+    |           ^^^^^^^^^^^^
+
+warning: constant `COLOR_BG0_S` is never used
+   --> src/termimad_colors.rs:126:11
+    |
+126 | pub const COLOR_BG0_S: Color = Color::Rgb {
+    |           ^^^^^^^^^^^
+
+warning: constant `COLOR_FG4` is never used
+   --> src/termimad_colors.rs:131:11
+    |
+131 | pub const COLOR_FG4: Color = Color::Rgb {
+    |           ^^^^^^^^^
+
+warning: constant `COLOR_FG3` is never used
+   --> src/termimad_colors.rs:136:11
+    |
+136 | pub const COLOR_FG3: Color = Color::Rgb {
+    |           ^^^^^^^^^
+
+warning: constant `COLOR_FG2` is never used
+   --> src/termimad_colors.rs:141:11
+    |
+141 | pub const COLOR_FG2: Color = Color::Rgb {
+    |           ^^^^^^^^^
+
+warning: constant `COLOR_FG1` is never used
+   --> src/termimad_colors.rs:146:11
+    |
+146 | pub const COLOR_FG1: Color = Color::Rgb {
+    |           ^^^^^^^^^
+
+warning: constant `COLOR_FG0` is never used
+   --> src/termimad_colors.rs:151:11
+    |
+151 | pub const COLOR_FG0: Color = Color::Rgb {
+    |           ^^^^^^^^^
+
+warning: constant `COLOR_ORANGE_LIGHT` is never used
+   --> src/termimad_colors.rs:156:11
+    |
+156 | pub const COLOR_ORANGE_LIGHT: Color = Color::Rgb {
+    |           ^^^^^^^^^^^^^^^^^^
+
+warning: `site-tui` (bin "site-tui") generated 55 warnings (run `cargo fix --bin "site-tui"` to apply 3 suggestions)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.06s
+     Running `target/debug/site-tui`
+[
+    Normal(
+        FmtComposite {
+            kind: Header(
+                1,
+            ),
+            compounds: [
+                "Preface",
+            ],
+            visible_length: 7,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [
+                "I have very little experience with exploitation or security research- some techniques employed in this write-up are almost certainly suboptimal. This is not a tutorial, do not treat it as such. Sensitive information has been censored best as possible.",
+            ],
+            visible_length: 251,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [],
+            visible_length: 0,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Header(
+                1,
+            ),
+            compounds: [
+                "Introduction ",
+            ],
+            visible_length: 13,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [
+                "Earlier in the year I attended a hackathon organized by my universities' IEEE branch. My team and I managed to hack together a pretty decent submission, and for our efforts we were rewarded with [second place](https://github.com/coal-rock/latex-tutor). Among the submissions a one [Mentora](https://devpost.com/software/mentora-eu1v49) piqued my interest. Mentora marketed itself as an "AI tutor", seeking to gamify quizzes and provide personalized lesson plans using, you guessed it, large language models.",
+            ],
+            visible_length: 507,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [],
+            visible_length: 0,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [
+                "Interested, I began to explore the "How we built it" section of the Devpost. React Native, Supabase, OpenAI integration. Yup! This ",
+                B"reeks",
+                " of vibe coder slop. Unfortunately, Mentora never seemed to see the light of day. Luckily, [our hero](https://github.com/christianmonfiston/) didn't stop there, and this time he's breaking into the social media market. Enter: ",
+                I"Pandu",
+                ".",
+            ],
+            visible_length: 368,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [],
+            visible_length: 0,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Header(
+                2,
+            ),
+            compounds: [
+                "What even is Pandu?",
+            ],
+            visible_length: 19,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [
+                "Much like Mentora, Pandu is a pretty generic take on an existing genre ",
+                I"but with more AI slop",
+                ". Disappointingly, there is yet to be an Android release of Pandu, and given that I don't own any Apple devices, investigating this might be a little rough.",
+            ],
+            visible_length: 248,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [],
+            visible_length: 0,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Header(
+                1,
+            ),
+            compounds: [
+                "First Steps",
+            ],
+            visible_length: 11,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [
+                "Apparently Apple's ",
+                C"IPA",
+                " format is encrypted, meaning that blindly pulling files from a server and expecting to be able to read them isn't going to work. Luckily, someone has managed to automate this process of decrypting these bundles and has even been so kind as to expose the tooling behind a Telegram bot.",
+            ],
+            visible_length: 307,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [],
+            visible_length: 0,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [
+                "<!-- <img src="pandu_ipa_dump.png" width=200> -->",
+            ],
+            visible_length: 49,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [],
+            visible_length: 0,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [
+                "After aquiring the decrypted IPA, I simply suffixed the file with ",
+                C".zip",
+                " and extracted it:",
+            ],
+            visible_length: 88,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "unzip pandu_ipa_v103.ipa.zip",
+            ],
+            visible_length: 28,
+            spacing: Some(
+                Spacing {
+                    width: 28,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [
+                "The archive yielded a ",
+                C"Payload",
+                " folder, with the following structure:",
+            ],
+            visible_length: 67,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [],
+            visible_length: 0,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [
+                "<!-- <img src="pandu_dump_tree.png"> -->",
+            ],
+            visible_length: 40,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [],
+            visible_length: 0,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [
+                "The main file of interest here is the ",
+                C"main.jsbundle",
+                ", which appears to be a JavaScript bundle compiled with Hermes. After a quick pass with [hermes-dec](https://github.com/P1sec/hermes-dec/), I was left with a mostly readable blob of pseudocode:",
+            ],
+            visible_length: 244,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "python hbc_decompiler.py ./Payload/Pandu.app/main.jsbundle pandu_decomp.js",
+            ],
+            visible_length: 74,
+            spacing: Some(
+                Spacing {
+                    width: 74,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [],
+            visible_length: 0,
+            spacing: None,
+        },
+    ),
+    HorizontalRule,
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [],
+            visible_length: 0,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Header(
+                1,
+            ),
+            compounds: [
+                "Initial Investigation",
+            ],
+            visible_length: 21,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [
+                "I began my search by looking for very low-hanging fruit. Surely an app published on the App Store wouldn't expose an OpenAI key, right?",
+            ],
+            visible_length: 135,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [],
+            visible_length: 0,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "coal@laptop ~/C/P/hermes-dec (main)> grep "'sk-" pandu_decomp.js",
+            ],
+            visible_length: 64,
+            spacing: Some(
+                Spacing {
+                    width: 66,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "",
+            ],
+            visible_length: 0,
+            spacing: Some(
+                Spacing {
+                    width: 66,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "r11 = 'sk-proj-*************************************************';",
+            ],
+            visible_length: 66,
+            spacing: Some(
+                Spacing {
+                    width: 66,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [
+                "WHAT? There. Is. No. Way.",
+            ],
+            visible_length: 25,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "coal@laptop ~/C/P/hermes-dec (main)> curl "https://api.openai.com/v1/responses" \",
+            ],
+            visible_length: 81,
+            spacing: Some(
+                Spacing {
+                    width: 130,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    -H "Content-Type: application/json" \",
+            ],
+            visible_length: 41,
+            spacing: Some(
+                Spacing {
+                    width: 130,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    -H "Authorization: Bearer sk-proj-********" \",
+            ],
+            visible_length: 49,
+            spacing: Some(
+                Spacing {
+                    width: 130,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    -s \",
+            ],
+            visible_length: 8,
+            spacing: Some(
+                Spacing {
+                    width: 130,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    -d '{",
+            ],
+            visible_length: 9,
+            spacing: Some(
+                Spacing {
+                    width: 130,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "        "model": "gpt-4.1",",
+            ],
+            visible_length: 27,
+            spacing: Some(
+                Spacing {
+                    width: 130,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "        "input": "Write me a haiku about why it is not a great idea to hard code OpenAI API keys into client-facing applications."",
+            ],
+            visible_length: 130,
+            spacing: Some(
+                Spacing {
+                    width: 130,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    }' | jq -r '.output[0].content[0].text'",
+            ],
+            visible_length: 43,
+            spacing: Some(
+                Spacing {
+                    width: 130,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "",
+            ],
+            visible_length: 0,
+            spacing: Some(
+                Spacing {
+                    width: 130,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "Secrets in plain sight—  ",
+            ],
+            visible_length: 25,
+            spacing: Some(
+                Spacing {
+                    width: 130,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "Exposed keys invite misuse,  ",
+            ],
+            visible_length: 29,
+            spacing: Some(
+                Spacing {
+                    width: 130,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "Guard doors, don’t paint signs.",
+            ],
+            visible_length: 31,
+            spacing: Some(
+                Spacing {
+                    width: 130,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [
+                "So it turns out that all the fancy LLM integration is handled client-side, with the users' device issuing the OpenAI API queries and forwarding the output to the "backend" (if you can even call it that, I'll get to this later).",
+            ],
+            visible_length: 227,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [],
+            visible_length: 0,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Header(
+                1,
+            ),
+            compounds: [
+                "Supabase",
+            ],
+            visible_length: 8,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [
+                "If you aren't familiar, Supabase is a ",
+                I"Backend-as-a-Service",
+                ", providing CRUD-accessible endpoints, a database, storage buckets, authentication, and even real-time communication. The upside of something like this is that you don't need to understand the complexities that come with backend-development in-order to build something that "just-works". However, you'll later come to see that this is also a hidden downside, as some people shouldn't be permitted within 10 feet of a backend.",
+            ],
+            visible_length: 483,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [],
+            visible_length: 0,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [
+                "Taking the place of a standard database, Supabase expects the client to talk directly to the database- now, you might be thinking to yourself: "isn't that a horrible idea?" and to your question, I'll reply "yes." The assumption is that the person in-charge of configuring Supabase will correctly dish out permissions such that end-users cannot simply read/write to arbitrary relations, but as you'll soon see, this is not always the case.",
+            ],
+            visible_length: 438,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [],
+            visible_length: 0,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [
+                "With the decompiled pseudocode in hand, it was as simple as grepping for few keywords:",
+            ],
+            visible_length: 86,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "function(...) {",
+            ],
+            visible_length: 15,
+            spacing: Some(
+                Spacing {
+                    width: 106,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    ...",
+            ],
+            visible_length: 7,
+            spacing: Some(
+                Spacing {
+                    width: 106,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    r1 = {'storage': null, 'autoRefreshToken': true, 'persistSession': true, 'detectSessionInUrl': false};",
+            ],
+            visible_length: 106,
+            spacing: Some(
+                Spacing {
+                    width: 106,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    r3 = r3.default;",
+            ],
+            visible_length: 20,
+            spacing: Some(
+                Spacing {
+                    width: 106,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    r1['storage'] = r3;",
+            ],
+            visible_length: 23,
+            spacing: Some(
+                Spacing {
+                    width: 106,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    r4['auth'] = r1;",
+            ],
+            visible_length: 20,
+            spacing: Some(
+                Spacing {
+                    width: 106,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    r3 = 'https://XXXXXXXXXXXX.supabase.co'; // supabaseUrl",
+            ],
+            visible_length: 59,
+            spacing: Some(
+                Spacing {
+                    width: 106,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    r1 = 'eyJh.XXXXXXXX.XXXXXXXXX'; // supabaseAnonKey",
+            ],
+            visible_length: 54,
+            spacing: Some(
+                Spacing {
+                    width: 106,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    r1 = r5.bind(r0)(r3, r1, r4); // r1 = createClient(supabaseUrl, supabaseAnonKey, r4);",
+            ],
+            visible_length: 89,
+            spacing: Some(
+                Spacing {
+                    width: 106,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    r2['supabase'] = r1;",
+            ],
+            visible_length: 24,
+            spacing: Some(
+                Spacing {
+                    width: 106,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    r1 = r1.auth;",
+            ],
+            visible_length: 17,
+            spacing: Some(
+                Spacing {
+                    width: 106,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    r1 = r1.admin;",
+            ],
+            visible_length: 18,
+            spacing: Some(
+                Spacing {
+                    width: 106,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    r2['adminAuthClient'] = r1;",
+            ],
+            visible_length: 31,
+            spacing: Some(
+                Spacing {
+                    width: 106,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    return r0;",
+            ],
+            visible_length: 14,
+            spacing: Some(
+                Spacing {
+                    width: 106,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "};",
+            ],
+            visible_length: 2,
+            spacing: Some(
+                Spacing {
+                    width: 106,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [],
+            visible_length: 0,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [
+                "Now that we have the Supabase information, it's time to go hunting for relations that might be useful. After some investigation, it appears that all Supabase queries follow roughly the same pattern in the pseudocode:",
+            ],
+            visible_length: 216,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "r6 = r4.supabase; // supabase.from('user_wallet')...",
+            ],
+            visible_length: 52,
+            spacing: Some(
+                Spacing {
+                    width: 52,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "r4 = r6.from;",
+            ],
+            visible_length: 13,
+            spacing: Some(
+                Spacing {
+                    width: 52,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "r13 = 'user_wallet';",
+            ],
+            visible_length: 20,
+            spacing: Some(
+                Spacing {
+                    width: 52,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "...",
+            ],
+            visible_length: 3,
+            spacing: Some(
+                Spacing {
+                    width: 52,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [
+                "With this in mind, we can write some cheeky Python that'll help us filter through this ",
+                I"checks notes",
+                " 1.5M LoC blob.",
+            ],
+            visible_length: 114,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Quote,
+            compounds: [
+                "I know that this could be accomplished with a regex, but I'm stubborn and refuse to change ",
+            ],
+            visible_length: 93,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "relations: list[str] = []",
+            ],
+            visible_length: 25,
+            spacing: Some(
+                Spacing {
+                    width: 54,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "",
+            ],
+            visible_length: 0,
+            spacing: Some(
+                Spacing {
+                    width: 54,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "with open("pandu_decomp.js") as file:",
+            ],
+            visible_length: 37,
+            spacing: Some(
+                Spacing {
+                    width: 54,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    lines = file.readlines()",
+            ],
+            visible_length: 28,
+            spacing: Some(
+                Spacing {
+                    width: 54,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "",
+            ],
+            visible_length: 0,
+            spacing: Some(
+                Spacing {
+                    width: 54,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    for line_num, line in enumerate(lines):",
+            ],
+            visible_length: 43,
+            spacing: Some(
+                Spacing {
+                    width: 54,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "        if "supabase" not in line:",
+            ],
+            visible_length: 34,
+            spacing: Some(
+                Spacing {
+                    width: 54,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "            continue",
+            ],
+            visible_length: 20,
+            spacing: Some(
+                Spacing {
+                    width: 54,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "",
+            ],
+            visible_length: 0,
+            spacing: Some(
+                Spacing {
+                    width: 54,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "        if "from" not in lines[line_num + 1] or "":",
+            ],
+            visible_length: 51,
+            spacing: Some(
+                Spacing {
+                    width: 54,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "            continue",
+            ],
+            visible_length: 20,
+            spacing: Some(
+                Spacing {
+                    width: 54,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "",
+            ],
+            visible_length: 0,
+            spacing: Some(
+                Spacing {
+                    width: 54,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "        target_line = lines[line_num + 2] or """,
+            ],
+            visible_length: 47,
+            spacing: Some(
+                Spacing {
+                    width: 54,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "",
+            ],
+            visible_length: 0,
+            spacing: Some(
+                Spacing {
+                    width: 54,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "        if "'" in target_line:",
+            ],
+            visible_length: 30,
+            spacing: Some(
+                Spacing {
+                    width: 54,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "            target_line_parts = target_line.split("'")",
+            ],
+            visible_length: 54,
+            spacing: Some(
+                Spacing {
+                    width: 54,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "            relation = target_line_parts[1]",
+            ],
+            visible_length: 43,
+            spacing: Some(
+                Spacing {
+                    width: 54,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "",
+            ],
+            visible_length: 0,
+            spacing: Some(
+                Spacing {
+                    width: 54,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "            if relation not in relations:",
+            ],
+            visible_length: 41,
+            spacing: Some(
+                Spacing {
+                    width: 54,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "                relations.append(relation)",
+            ],
+            visible_length: 42,
+            spacing: Some(
+                Spacing {
+                    width: 54,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "                print(relation)",
+            ],
+            visible_length: 31,
+            spacing: Some(
+                Spacing {
+                    width: 54,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [
+                "And let's run it!",
+            ],
+            visible_length: 17,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "python find_relations.py",
+            ],
+            visible_length: 24,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "",
+            ],
+            visible_length: 0,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "profiles",
+            ],
+            visible_length: 8,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "user_wallet",
+            ],
+            visible_length: 11,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "user_progression",
+            ],
+            visible_length: 16,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "engagement_scores",
+            ],
+            visible_length: 17,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "user_interests",
+            ],
+            visible_length: 14,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "user_locations",
+            ],
+            visible_length: 14,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "user_wallets",
+            ],
+            visible_length: 12,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "flaggame",
+            ],
+            visible_length: 8,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "user_friendships",
+            ],
+            visible_length: 16,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "friend_requests",
+            ],
+            visible_length: 15,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "blocked_users",
+            ],
+            visible_length: 13,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "reports",
+            ],
+            visible_length: 7,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "game_requests",
+            ],
+            visible_length: 13,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "guessmoji_game",
+            ],
+            visible_length: 14,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "rizzme_game",
+            ],
+            visible_length: 11,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "tic_tac_toe_game",
+            ],
+            visible_length: 16,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "truthordare_game",
+            ],
+            visible_length: 16,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "user_views",
+            ],
+            visible_length: 10,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "user_likes",
+            ],
+            visible_length: 10,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "game_ideas",
+            ],
+            visible_length: 10,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "chat_requests",
+            ],
+            visible_length: 13,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [],
+            visible_length: 0,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [
+                "These relation names are... interesting to say the least.",
+            ],
+            visible_length: 57,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [],
+            visible_length: 0,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [
+                "Let's poke around and see what we have access to, a quick ",
+                C"select",
+                " from the ",
+                C"profiles",
+                " relation doesn't seem like a terrible idea ;\).",
+            ],
+            visible_length: 130,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [],
+            visible_length: 0,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "import { createClient } from '@supabase/supabase-js';",
+            ],
+            visible_length: 53,
+            spacing: Some(
+                Spacing {
+                    width: 64,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "",
+            ],
+            visible_length: 0,
+            spacing: Some(
+                Spacing {
+                    width: 64,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "const supabaseUrl = 'https://XXXXXXXXXXXX.supabase.co';",
+            ],
+            visible_length: 55,
+            spacing: Some(
+                Spacing {
+                    width: 64,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "const supabaseAnonKey = 'eyJh.XXXXXXXX.XXXXXXXXX';",
+            ],
+            visible_length: 50,
+            spacing: Some(
+                Spacing {
+                    width: 64,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "",
+            ],
+            visible_length: 0,
+            spacing: Some(
+                Spacing {
+                    width: 64,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "const supabase = createClient(supabaseUrl, supabaseAnonKey, {});",
+            ],
+            visible_length: 64,
+            spacing: Some(
+                Spacing {
+                    width: 64,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "",
+            ],
+            visible_length: 0,
+            spacing: Some(
+                Spacing {
+                    width: 64,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "const result = await supabase",
+            ],
+            visible_length: 29,
+            spacing: Some(
+                Spacing {
+                    width: 64,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    .from("profiles")",
+            ],
+            visible_length: 21,
+            spacing: Some(
+                Spacing {
+                    width: 64,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    .select()",
+            ],
+            visible_length: 13,
+            spacing: Some(
+                Spacing {
+                    width: 64,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    .eq("id", "0f982e76-6479-4f7d-a995-b26a6d5ee5b6");",
+            ],
+            visible_length: 54,
+            spacing: Some(
+                Spacing {
+                    width: 64,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "",
+            ],
+            visible_length: 0,
+            spacing: Some(
+                Spacing {
+                    width: 64,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "console.log(result)",
+            ],
+            visible_length: 19,
+            spacing: Some(
+                Spacing {
+                    width: 64,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+]
+[
+    Normal(
+        FmtComposite {
+            kind: Header(
+                1,
+            ),
+            compounds: [
+                "Preface",
+            ],
+            visible_length: 7,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [
+                "I have very little experience with exploitation or security research- some techniques employed in this write-up are almost certainly suboptimal. This is not a tutorial, do not treat it as such. Sensitive information has been censored best as possible.",
+            ],
+            visible_length: 251,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [],
+            visible_length: 0,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Header(
+                1,
+            ),
+            compounds: [
+                "Introduction ",
+            ],
+            visible_length: 13,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [
+                "Earlier in the year I attended a hackathon organized by my universities' IEEE branch. My team and I managed to hack together a pretty decent submission, and for our efforts we were rewarded with [second place](https://github.com/coal-rock/latex-tutor). Among the submissions a one [Mentora](https://devpost.com/software/mentora-eu1v49) piqued my interest. Mentora marketed itself as an "AI tutor", seeking to gamify quizzes and provide personalized lesson plans using, you guessed it, large language models.",
+            ],
+            visible_length: 507,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [],
+            visible_length: 0,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [
+                "Interested, I began to explore the "How we built it" section of the Devpost. React Native, Supabase, OpenAI integration. Yup! This ",
+                B"reeks",
+                " of vibe coder slop. Unfortunately, Mentora never seemed to see the light of day. Luckily, [our hero](https://github.com/christianmonfiston/) didn't stop there, and this time he's breaking into the social media market. Enter: ",
+                I"Pandu",
+                ".",
+            ],
+            visible_length: 368,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [],
+            visible_length: 0,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Header(
+                2,
+            ),
+            compounds: [
+                "What even is Pandu?",
+            ],
+            visible_length: 19,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [
+                "Much like Mentora, Pandu is a pretty generic take on an existing genre ",
+                I"but with more AI slop",
+                ". Disappointingly, there is yet to be an Android release of Pandu, and given that I don't own any Apple devices, investigating this might be a little rough.",
+            ],
+            visible_length: 248,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [],
+            visible_length: 0,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Header(
+                1,
+            ),
+            compounds: [
+                "First Steps",
+            ],
+            visible_length: 11,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [
+                "Apparently Apple's ",
+                C"IPA",
+                " format is encrypted, meaning that blindly pulling files from a server and expecting to be able to read them isn't going to work. Luckily, someone has managed to automate this process of decrypting these bundles and has even been so kind as to expose the tooling behind a Telegram bot.",
+            ],
+            visible_length: 307,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [],
+            visible_length: 0,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [
+                "<!-- <img src="pandu_ipa_dump.png" width=200> -->",
+            ],
+            visible_length: 49,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [],
+            visible_length: 0,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [
+                "After aquiring the decrypted IPA, I simply suffixed the file with ",
+                C".zip",
+                " and extracted it:",
+            ],
+            visible_length: 88,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "unzip pandu_ipa_v103.ipa.zip",
+            ],
+            visible_length: 28,
+            spacing: Some(
+                Spacing {
+                    width: 28,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [
+                "The archive yielded a ",
+                C"Payload",
+                " folder, with the following structure:",
+            ],
+            visible_length: 67,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [],
+            visible_length: 0,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [
+                "<!-- <img src="pandu_dump_tree.png"> -->",
+            ],
+            visible_length: 40,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [],
+            visible_length: 0,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [
+                "The main file of interest here is the ",
+                C"main.jsbundle",
+                ", which appears to be a JavaScript bundle compiled with Hermes. After a quick pass with [hermes-dec](https://github.com/P1sec/hermes-dec/), I was left with a mostly readable blob of pseudocode:",
+            ],
+            visible_length: 244,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "python hbc_decompiler.py ./Payload/Pandu.app/main.jsbundle pandu_decomp.js",
+            ],
+            visible_length: 74,
+            spacing: Some(
+                Spacing {
+                    width: 74,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [],
+            visible_length: 0,
+            spacing: None,
+        },
+    ),
+    HorizontalRule,
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [],
+            visible_length: 0,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Header(
+                1,
+            ),
+            compounds: [
+                "Initial Investigation",
+            ],
+            visible_length: 21,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [
+                "I began my search by looking for very low-hanging fruit. Surely an app published on the App Store wouldn't expose an OpenAI key, right?",
+            ],
+            visible_length: 135,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [],
+            visible_length: 0,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "coal@laptop ~/C/P/hermes-dec (main)> grep "'sk-" pandu_decomp.js",
+            ],
+            visible_length: 64,
+            spacing: Some(
+                Spacing {
+                    width: 66,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "",
+            ],
+            visible_length: 0,
+            spacing: Some(
+                Spacing {
+                    width: 66,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "r11 = 'sk-proj-*************************************************';",
+            ],
+            visible_length: 66,
+            spacing: Some(
+                Spacing {
+                    width: 66,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [
+                "WHAT? There. Is. No. Way.",
+            ],
+            visible_length: 25,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "coal@laptop ~/C/P/hermes-dec (main)> curl "https://api.openai.com/v1/responses" \",
+            ],
+            visible_length: 81,
+            spacing: Some(
+                Spacing {
+                    width: 130,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    -H "Content-Type: application/json" \",
+            ],
+            visible_length: 41,
+            spacing: Some(
+                Spacing {
+                    width: 130,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    -H "Authorization: Bearer sk-proj-********" \",
+            ],
+            visible_length: 49,
+            spacing: Some(
+                Spacing {
+                    width: 130,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    -s \",
+            ],
+            visible_length: 8,
+            spacing: Some(
+                Spacing {
+                    width: 130,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    -d '{",
+            ],
+            visible_length: 9,
+            spacing: Some(
+                Spacing {
+                    width: 130,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "        "model": "gpt-4.1",",
+            ],
+            visible_length: 27,
+            spacing: Some(
+                Spacing {
+                    width: 130,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "        "input": "Write me a haiku about why it is not a great idea to hard code OpenAI API keys into client-facing applications."",
+            ],
+            visible_length: 130,
+            spacing: Some(
+                Spacing {
+                    width: 130,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    }' | jq -r '.output[0].content[0].text'",
+            ],
+            visible_length: 43,
+            spacing: Some(
+                Spacing {
+                    width: 130,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "",
+            ],
+            visible_length: 0,
+            spacing: Some(
+                Spacing {
+                    width: 130,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "Secrets in plain sight—  ",
+            ],
+            visible_length: 25,
+            spacing: Some(
+                Spacing {
+                    width: 130,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "Exposed keys invite misuse,  ",
+            ],
+            visible_length: 29,
+            spacing: Some(
+                Spacing {
+                    width: 130,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "Guard doors, don’t paint signs.",
+            ],
+            visible_length: 31,
+            spacing: Some(
+                Spacing {
+                    width: 130,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [
+                "So it turns out that all the fancy LLM integration is handled client-side, with the users' device issuing the OpenAI API queries and forwarding the output to the "backend" (if you can even call it that, I'll get to this later).",
+            ],
+            visible_length: 227,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [],
+            visible_length: 0,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Header(
+                1,
+            ),
+            compounds: [
+                "Supabase",
+            ],
+            visible_length: 8,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [
+                "If you aren't familiar, Supabase is a ",
+                I"Backend-as-a-Service",
+                ", providing CRUD-accessible endpoints, a database, storage buckets, authentication, and even real-time communication. The upside of something like this is that you don't need to understand the complexities that come with backend-development in-order to build something that "just-works". However, you'll later come to see that this is also a hidden downside, as some people shouldn't be permitted within 10 feet of a backend.",
+            ],
+            visible_length: 483,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [],
+            visible_length: 0,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [
+                "Taking the place of a standard database, Supabase expects the client to talk directly to the database- now, you might be thinking to yourself: "isn't that a horrible idea?" and to your question, I'll reply "yes." The assumption is that the person in-charge of configuring Supabase will correctly dish out permissions such that end-users cannot simply read/write to arbitrary relations, but as you'll soon see, this is not always the case.",
+            ],
+            visible_length: 438,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [],
+            visible_length: 0,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [
+                "With the decompiled pseudocode in hand, it was as simple as grepping for few keywords:",
+            ],
+            visible_length: 86,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "function(...) {",
+            ],
+            visible_length: 15,
+            spacing: Some(
+                Spacing {
+                    width: 106,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    ...",
+            ],
+            visible_length: 7,
+            spacing: Some(
+                Spacing {
+                    width: 106,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    r1 = {'storage': null, 'autoRefreshToken': true, 'persistSession': true, 'detectSessionInUrl': false};",
+            ],
+            visible_length: 106,
+            spacing: Some(
+                Spacing {
+                    width: 106,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    r3 = r3.default;",
+            ],
+            visible_length: 20,
+            spacing: Some(
+                Spacing {
+                    width: 106,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    r1['storage'] = r3;",
+            ],
+            visible_length: 23,
+            spacing: Some(
+                Spacing {
+                    width: 106,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    r4['auth'] = r1;",
+            ],
+            visible_length: 20,
+            spacing: Some(
+                Spacing {
+                    width: 106,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    r3 = 'https://XXXXXXXXXXXX.supabase.co'; // supabaseUrl",
+            ],
+            visible_length: 59,
+            spacing: Some(
+                Spacing {
+                    width: 106,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    r1 = 'eyJh.XXXXXXXX.XXXXXXXXX'; // supabaseAnonKey",
+            ],
+            visible_length: 54,
+            spacing: Some(
+                Spacing {
+                    width: 106,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    r1 = r5.bind(r0)(r3, r1, r4); // r1 = createClient(supabaseUrl, supabaseAnonKey, r4);",
+            ],
+            visible_length: 89,
+            spacing: Some(
+                Spacing {
+                    width: 106,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    r2['supabase'] = r1;",
+            ],
+            visible_length: 24,
+            spacing: Some(
+                Spacing {
+                    width: 106,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    r1 = r1.auth;",
+            ],
+            visible_length: 17,
+            spacing: Some(
+                Spacing {
+                    width: 106,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    r1 = r1.admin;",
+            ],
+            visible_length: 18,
+            spacing: Some(
+                Spacing {
+                    width: 106,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    r2['adminAuthClient'] = r1;",
+            ],
+            visible_length: 31,
+            spacing: Some(
+                Spacing {
+                    width: 106,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    return r0;",
+            ],
+            visible_length: 14,
+            spacing: Some(
+                Spacing {
+                    width: 106,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "};",
+            ],
+            visible_length: 2,
+            spacing: Some(
+                Spacing {
+                    width: 106,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [],
+            visible_length: 0,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [
+                "Now that we have the Supabase information, it's time to go hunting for relations that might be useful. After some investigation, it appears that all Supabase queries follow roughly the same pattern in the pseudocode:",
+            ],
+            visible_length: 216,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "r6 = r4.supabase; // supabase.from('user_wallet')...",
+            ],
+            visible_length: 52,
+            spacing: Some(
+                Spacing {
+                    width: 52,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "r4 = r6.from;",
+            ],
+            visible_length: 13,
+            spacing: Some(
+                Spacing {
+                    width: 52,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "r13 = 'user_wallet';",
+            ],
+            visible_length: 20,
+            spacing: Some(
+                Spacing {
+                    width: 52,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "...",
+            ],
+            visible_length: 3,
+            spacing: Some(
+                Spacing {
+                    width: 52,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [
+                "With this in mind, we can write some cheeky Python that'll help us filter through this ",
+                I"checks notes",
+                " 1.5M LoC blob.",
+            ],
+            visible_length: 114,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Quote,
+            compounds: [
+                "I know that this could be accomplished with a regex, but I'm stubborn and refuse to change ",
+            ],
+            visible_length: 93,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "relations: list[str] = []",
+            ],
+            visible_length: 25,
+            spacing: Some(
+                Spacing {
+                    width: 54,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "",
+            ],
+            visible_length: 0,
+            spacing: Some(
+                Spacing {
+                    width: 54,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "with open("pandu_decomp.js") as file:",
+            ],
+            visible_length: 37,
+            spacing: Some(
+                Spacing {
+                    width: 54,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    lines = file.readlines()",
+            ],
+            visible_length: 28,
+            spacing: Some(
+                Spacing {
+                    width: 54,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "",
+            ],
+            visible_length: 0,
+            spacing: Some(
+                Spacing {
+                    width: 54,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    for line_num, line in enumerate(lines):",
+            ],
+            visible_length: 43,
+            spacing: Some(
+                Spacing {
+                    width: 54,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "        if "supabase" not in line:",
+            ],
+            visible_length: 34,
+            spacing: Some(
+                Spacing {
+                    width: 54,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "            continue",
+            ],
+            visible_length: 20,
+            spacing: Some(
+                Spacing {
+                    width: 54,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "",
+            ],
+            visible_length: 0,
+            spacing: Some(
+                Spacing {
+                    width: 54,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "        if "from" not in lines[line_num + 1] or "":",
+            ],
+            visible_length: 51,
+            spacing: Some(
+                Spacing {
+                    width: 54,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "            continue",
+            ],
+            visible_length: 20,
+            spacing: Some(
+                Spacing {
+                    width: 54,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "",
+            ],
+            visible_length: 0,
+            spacing: Some(
+                Spacing {
+                    width: 54,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "        target_line = lines[line_num + 2] or """,
+            ],
+            visible_length: 47,
+            spacing: Some(
+                Spacing {
+                    width: 54,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "",
+            ],
+            visible_length: 0,
+            spacing: Some(
+                Spacing {
+                    width: 54,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "        if "'" in target_line:",
+            ],
+            visible_length: 30,
+            spacing: Some(
+                Spacing {
+                    width: 54,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "            target_line_parts = target_line.split("'")",
+            ],
+            visible_length: 54,
+            spacing: Some(
+                Spacing {
+                    width: 54,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "            relation = target_line_parts[1]",
+            ],
+            visible_length: 43,
+            spacing: Some(
+                Spacing {
+                    width: 54,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "",
+            ],
+            visible_length: 0,
+            spacing: Some(
+                Spacing {
+                    width: 54,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "            if relation not in relations:",
+            ],
+            visible_length: 41,
+            spacing: Some(
+                Spacing {
+                    width: 54,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "                relations.append(relation)",
+            ],
+            visible_length: 42,
+            spacing: Some(
+                Spacing {
+                    width: 54,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "                print(relation)",
+            ],
+            visible_length: 31,
+            spacing: Some(
+                Spacing {
+                    width: 54,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [
+                "And let's run it!",
+            ],
+            visible_length: 17,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "python find_relations.py",
+            ],
+            visible_length: 24,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "",
+            ],
+            visible_length: 0,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "profiles",
+            ],
+            visible_length: 8,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "user_wallet",
+            ],
+            visible_length: 11,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "user_progression",
+            ],
+            visible_length: 16,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "engagement_scores",
+            ],
+            visible_length: 17,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "user_interests",
+            ],
+            visible_length: 14,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "user_locations",
+            ],
+            visible_length: 14,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "user_wallets",
+            ],
+            visible_length: 12,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "flaggame",
+            ],
+            visible_length: 8,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "user_friendships",
+            ],
+            visible_length: 16,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "friend_requests",
+            ],
+            visible_length: 15,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "blocked_users",
+            ],
+            visible_length: 13,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "reports",
+            ],
+            visible_length: 7,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "game_requests",
+            ],
+            visible_length: 13,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "guessmoji_game",
+            ],
+            visible_length: 14,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "rizzme_game",
+            ],
+            visible_length: 11,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "tic_tac_toe_game",
+            ],
+            visible_length: 16,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "truthordare_game",
+            ],
+            visible_length: 16,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "user_views",
+            ],
+            visible_length: 10,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "user_likes",
+            ],
+            visible_length: 10,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "game_ideas",
+            ],
+            visible_length: 10,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "chat_requests",
+            ],
+            visible_length: 13,
+            spacing: Some(
+                Spacing {
+                    width: 24,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [],
+            visible_length: 0,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [
+                "These relation names are... interesting to say the least.",
+            ],
+            visible_length: 57,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [],
+            visible_length: 0,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [
+                "Let's poke around and see what we have access to, a quick ",
+                C"select",
+                " from the ",
+                C"profiles",
+                " relation doesn't seem like a terrible idea ;\).",
+            ],
+            visible_length: 130,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Paragraph,
+            compounds: [],
+            visible_length: 0,
+            spacing: None,
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "import { createClient } from '@supabase/supabase-js';",
+            ],
+            visible_length: 53,
+            spacing: Some(
+                Spacing {
+                    width: 64,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "",
+            ],
+            visible_length: 0,
+            spacing: Some(
+                Spacing {
+                    width: 64,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "const supabaseUrl = 'https://XXXXXXXXXXXX.supabase.co';",
+            ],
+            visible_length: 55,
+            spacing: Some(
+                Spacing {
+                    width: 64,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "const supabaseAnonKey = 'eyJh.XXXXXXXX.XXXXXXXXX';",
+            ],
+            visible_length: 50,
+            spacing: Some(
+                Spacing {
+                    width: 64,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "",
+            ],
+            visible_length: 0,
+            spacing: Some(
+                Spacing {
+                    width: 64,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "const supabase = createClient(supabaseUrl, supabaseAnonKey, {});",
+            ],
+            visible_length: 64,
+            spacing: Some(
+                Spacing {
+                    width: 64,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "",
+            ],
+            visible_length: 0,
+            spacing: Some(
+                Spacing {
+                    width: 64,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "const result = await supabase",
+            ],
+            visible_length: 29,
+            spacing: Some(
+                Spacing {
+                    width: 64,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    .from("profiles")",
+            ],
+            visible_length: 21,
+            spacing: Some(
+                Spacing {
+                    width: 64,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    .select()",
+            ],
+            visible_length: 13,
+            spacing: Some(
+                Spacing {
+                    width: 64,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "    .eq("id", "0f982e76-6479-4f7d-a995-b26a6d5ee5b6");",
+            ],
+            visible_length: 54,
+            spacing: Some(
+                Spacing {
+                    width: 64,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "",
+            ],
+            visible_length: 0,
+            spacing: Some(
+                Spacing {
+                    width: 64,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+    Normal(
+        FmtComposite {
+            kind: Code,
+            compounds: [
+                "console.log(result)",
+            ],
+            visible_length: 19,
+            spacing: Some(
+                Spacing {
+                    width: 64,
+                    align: Left,
+                },
+            ),
+        },
+    ),
+]

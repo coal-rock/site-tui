@@ -15,6 +15,8 @@ pub fn Home() -> impl Into<AnyElement<'static>> {
             gap: 1,
         ) {
             Navbar(
+                should_center: true,
+                active: true,
             ){}
 
             MixedText(contents: vec![

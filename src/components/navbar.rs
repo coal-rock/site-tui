@@ -3,25 +3,40 @@ use std::process::exit;
 
 use crate::{AppState, CurrentPage, colors::*};
 
+#[derive(Default, Clone, Props)]
+pub struct NavbarProps {
+    pub should_center: bool,
+    pub active: bool,
+}
+
 #[component]
-pub fn Navbar(mut hooks: Hooks) -> impl Into<AnyElement<'static>> {
+pub fn Navbar(mut hooks: Hooks, props: &NavbarProps) -> impl Into<AnyElement<'static>> {
     let mut state = hooks.use_context_mut::<AppState>();
     let mut focus = hooks.use_state(|| 0);
     let mut should_switch = hooks.use_state(|| false);
 
+    let active = props.active.clone();
     hooks.use_terminal_events(move |event| match event {
         TerminalEvent::Key(KeyEvent { code, kind, .. }) if kind != KeyEventKind::Release => {
             match code {
                 KeyCode::Enter | KeyCode::Char(' ') => should_switch.set(true),
-                KeyCode::Right | KeyCode::Tab | KeyCode::Char('l') => focus.set((focus + 1) % 4),
-                KeyCode::Left | KeyCode::BackTab | KeyCode::Char('h') => focus.set((focus + 3) % 4),
+                KeyCode::Right | KeyCode::Char('l') => {
+                    if active {
+                        focus.set((focus + 1) % 4)
+                    }
+                }
+                KeyCode::Left | KeyCode::Char('h') => {
+                    if active {
+                        focus.set((focus + 3) % 4)
+                    }
+                }
                 _ => {}
             }
         }
         _ => {}
     });
 
-    if should_switch.get() {
+    if should_switch.get() && props.active {
         match focus.get() {
             0 => state.current_page.set(CurrentPage::Home),
             1 => state.current_page.set(CurrentPage::Blog),
@@ -44,30 +59,31 @@ pub fn Navbar(mut hooks: Hooks) -> impl Into<AnyElement<'static>> {
     element! {
         View(
             flex_direction: FlexDirection::Column,
+            align_items: if props.should_center { AlignItems::Center } else { AlignItems::Start }
         ) {
             MixedText(align: TextAlign::Center, contents: vec![
-                MixedTextContent::new("site").color(COLOR_GRAY).weight(Weight::Bold).decoration(if focus == 0 { TextDecoration::Underline } else { TextDecoration::None }),
-                MixedTextContent::new("@").color(COLOR_YELLOW).weight(Weight::Bold).decoration(if focus == 0 { TextDecoration::Underline } else { TextDecoration::None }),
-                MixedTextContent::new("coal.sh").color(COLOR_RED_LIGHT).weight(Weight::Bold).decoration(if focus == 0 { TextDecoration::Underline } else { TextDecoration::None }),
+                MixedTextContent::new("site").color(COLOR_GRAY).weight(Weight::Bold).decoration(if focus == 0 && props.active { TextDecoration::Underline } else { TextDecoration::None }),
+                MixedTextContent::new("@").color(COLOR_YELLOW).weight(Weight::Bold).decoration(if focus == 0 && props.active { TextDecoration::Underline } else { TextDecoration::None }),
+                MixedTextContent::new("coal.sh").color(COLOR_RED_LIGHT).weight(Weight::Bold).decoration(if focus == 0 && props.active { TextDecoration::Underline } else { TextDecoration::None }),
             ])
 
             View(
             ) {
                 Text(content: "[ ", color: COLOR_FG0)
                 Button() {
-                    Text(content: "blog", color: COLOR_FG0, decoration: if focus == 1 {TextDecoration::Underline } else { TextDecoration::None } )
+                    Text(content: "blog", color: COLOR_FG0, decoration: if focus == 1 && props.active {TextDecoration::Underline } else { TextDecoration::None } )
                 }
                 Text(content: " ] ", color: COLOR_FG0)
 
                 Text(content: "[ ", color: COLOR_FG0)
                 Button() {
-                    Text(content: "projects", color: COLOR_FG0, decoration: if focus == 2 {TextDecoration::Underline } else { TextDecoration::None } )
+                    Text(content: "projects", color: COLOR_FG0, decoration: if focus == 2 && props.active {TextDecoration::Underline } else { TextDecoration::None } )
                 }
                 Text(content: " ] ", color: COLOR_FG0)
 
                 Text(content: "[ ", color: COLOR_FG0)
                 Button() {
-                    Text(content: "resume", color: COLOR_FG0, decoration: if focus == 3 {TextDecoration::Underline } else { TextDecoration::None } )
+                    Text(content: "resume", color: COLOR_FG0, decoration: if focus == 3 && props.active {TextDecoration::Underline } else { TextDecoration::None } )
                 }
                 Text(content: " ]", color: COLOR_FG0)
             }

@@ -4,15 +4,17 @@ mod colors;
 mod components;
 mod pages;
 mod state;
+mod termimad_colors;
 
 use colors::*;
-use pages::{Blog, Home};
+use pages::{Blog, BlogPost, BlogPostContent, Home};
 use state::AppState;
 
-#[derive(Copy, Clone)]
+#[derive(Clone)]
 pub enum CurrentPage {
     Home,
     Blog,
+    BlogPost(BlogPostContent),
 }
 
 #[component]
@@ -72,6 +74,20 @@ fn App(mut hooks: Hooks) -> impl Into<AnyElement<'static>> {
                         }
                     }
                 }
+                CurrentPage::BlogPost(post) => {
+                    element! {
+                        View(
+                            width,
+                            height,
+                            background_color: COLOR_BG,
+                            flex_direction: FlexDirection::Column,
+                            align_items: AlignItems::Center,
+                            justify_content: JustifyContent::Center,
+                        ){
+                            BlogPost(post: post.clone())
+                        }
+                    }
+                }
             })
         }
     }
@@ -79,5 +95,4 @@ fn App(mut hooks: Hooks) -> impl Into<AnyElement<'static>> {
 
 fn main() {
     smol::block_on(element!(App).fullscreen()).unwrap();
-    println!("hi")
 }
