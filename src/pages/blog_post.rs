@@ -1,7 +1,6 @@
 use chrono::DateTime;
 use iocraft::prelude::*;
 use minimad;
-use minimad::Compound;
 
 use crate::BlogPostContent;
 use crate::colors::*;
@@ -37,7 +36,7 @@ pub fn BlogPost(mut hooks: Hooks, props: &BlogPostProps) -> impl Into<AnyElement
 
     element! {
         View(
-            width: 60,
+            width: 75,
             height: 100pct,
             align_items: AlignItems::Start,
             justify_content: JustifyContent::Start,
@@ -58,7 +57,7 @@ pub fn BlogPost(mut hooks: Hooks, props: &BlogPostProps) -> impl Into<AnyElement
 
             View(
                 flex_direction: FlexDirection::Column,
-                width: 60,
+                width: 75,
             ) {
                 Text(content: props.post.title.clone(), color: COLOR_FG, weight: Weight::Bold)
                 Text(content: format!("{}", DateTime::from_timestamp(props.post.timestamp, 0).unwrap().format("%m/%d/%y")), color: COLOR_FG4)
@@ -89,7 +88,7 @@ pub fn BlogPost(mut hooks: Hooks, props: &BlogPostProps) -> impl Into<AnyElement
                             match l {
                                 minimad::Line::Normal(composite) => match composite.style {
                                     minimad::CompositeStyle::Header(_) => element! {
-                                        View(width: 60) {
+                                        View(width: 75) {
                                             #(
                                                 composite.compounds.into_iter().map(|compound| {
                                                     element! {
@@ -104,7 +103,7 @@ pub fn BlogPost(mut hooks: Hooks, props: &BlogPostProps) -> impl Into<AnyElement
                                         }
                                     },
                                     minimad::CompositeStyle::Paragraph => element! {
-                                        View(width: 60, flex_direction: FlexDirection::Column) {
+                                        View(width: 75, flex_direction: FlexDirection::Column) {
                                             MixedText(contents:
                                                 composite.compounds.into_iter().map(|compound| {
                                                     MixedTextContent::new(compound.src)
@@ -115,7 +114,7 @@ pub fn BlogPost(mut hooks: Hooks, props: &BlogPostProps) -> impl Into<AnyElement
                                         }
                                     },
                                     minimad::CompositeStyle::Code => element! {
-                                        View(width: 60, flex_direction: FlexDirection::Column, background_color: COLOR_BG1) {
+                                        View(width: 75, flex_direction: FlexDirection::Column, background_color: COLOR_BG1) {
                                             MixedText(contents:
                                                 composite.compounds.into_iter().map(|compound| {
                                                     MixedTextContent::new(compound.src)
@@ -126,7 +125,7 @@ pub fn BlogPost(mut hooks: Hooks, props: &BlogPostProps) -> impl Into<AnyElement
                                         }
                                     },
                                     minimad::CompositeStyle::Quote => element! {
-                                        View(width: 60, flex_direction: FlexDirection::Column) {
+                                        View(width: 75, flex_direction: FlexDirection::Column) {
                                             MixedText(contents:
                                                 composite.compounds.into_iter().map(|compound| {
                                                     MixedTextContent::new(compound.src)

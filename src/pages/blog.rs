@@ -23,7 +23,7 @@ impl BlogPostContent {
     async fn fetch() -> Vec<BlogPostContent> {
         Timer::after(Duration::from_secs(1)).await;
 
-        surf::get("http://localhost:8000/api/get_all_blogs")
+        surf::get("https://coal.sh/api/get_all_blogs")
             .recv_json()
             .await
             .unwrap()
@@ -119,7 +119,7 @@ pub fn Blog(mut hooks: Hooks) -> impl Into<AnyElement<'static>> {
 
     element! {
         View(
-            width: 60,
+            width: 75,
             height: 100pct,
             align_items: AlignItems::Start,
             justify_content: JustifyContent::Start,
