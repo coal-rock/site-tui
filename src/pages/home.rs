@@ -1,7 +1,7 @@
 use iocraft::prelude::*;
 
 use crate::colors::*;
-use crate::components::{Card, Navbar};
+use crate::components::{Card, Footer, Navbar};
 
 #[component]
 pub fn Home() -> impl Into<AnyElement<'static>> {
@@ -45,6 +45,8 @@ pub fn Home() -> impl Into<AnyElement<'static>> {
                     "email: coal320@proton.me",
                 ],
             )
+
+            Footer()
         }
     }
 }

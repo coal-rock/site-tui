@@ -6,3 +6,6 @@ pub use navbar::Navbar;
 
 mod loading;
 pub use loading::LoadingIndicator;
+
+mod footer;
+pub use footer::Footer;

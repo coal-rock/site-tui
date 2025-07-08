@@ -6,6 +6,7 @@ mod pages;
 mod state;
 
 use colors::*;
+use components::Footer;
 use pages::{Blog, BlogPost, BlogPostContent, Home};
 use state::AppState;
 
